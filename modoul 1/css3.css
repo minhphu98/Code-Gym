@@ -1,0 +1,14 @@
+.mot{
+    background: orange;
+    height: 380px;
+    width: 320px;
+}
+.mot h1 {
+    text-align: center;
+}
+.hai a{
+    size: A3;
+}
+.hai b{
+    size: A4;
+}
