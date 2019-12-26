@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sntt</title>
+    <script>
+        function snt() {
+            var n;
+var nt=true;
+            n=prompt(n);
+            if (n<2)
+            {
+nt=falsef;
+            }
+            else
+            {
+
+                for(var i=2;i<n;i++)
+                {
+                    if(n%i==0)
+                    {
+                      nt=false;
+                         break;
+                    }
+                }
+                if(nt==true)
+                {
+                    alert("đây là sô nguyên to");
+                }
+                else {
+                    alert("Đây không là số nguyên tố");
+                }
+
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+<input type="button" value="tìm số nguyên tố" onclick="snt()">
+</body>
+</html>
