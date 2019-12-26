@@ -1,0 +1,27 @@
+.ba {
+    float: left;
+}
+.bon
+{
+    float: right;
+
+}
+.khong
+{
+width: 600px;
+    height: 1000px;
+    right: 100px;
+    background: aquamarine;
+    height: 130px;
+
+}
+.mot
+{
+    background: aqua;
+    width: 600px;
+    text-align: center;
+}
+.nam {
+    background: aquamarine;
+    width: 600px;
+}

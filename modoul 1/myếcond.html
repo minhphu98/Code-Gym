@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My SEconde</title>
+    <script>
+        function thongbao(){
+            alert("Đây là thoo báo")
+        }
+        function tinhtong() {
+            let x,y,z;
+            x= prompt("nhap so thu nhat");
+            x=parseFloat(x);
+            y=prompt("nhap so thu 2");
+            y=parseFloat(y);
+            if(confirm("ban co muon tinh tong")==true) {
+                z = x + y;
+                alert("Tổng là:" + z);
+            } else alert("khong tinh tong")
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="thông báo" onclick="thongbao()" size="300px">
+<input type="button" value=" tinhtong" onclick="tinhtong()">
+</body>
+</html>
