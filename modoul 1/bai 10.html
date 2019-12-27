@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="mot">
+    <table>
+        <tr>
+            <td> <b>Amount</b></td>
+            <td ></td>
+            <td style="width: 50px"></td>
+            <td><b>from curency</b></td>
+            <td></td><td style="width: 50px"></td>
+            <td><b>to currency</b></td>
+            <td></td><td style="width: 50px"></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="hai" value="" id="txt"> </td>
+            <td ></td>
+            <td style="width: 50px"></td>
+            <td><select name="ba">
+                <option value="vn" id="v">Việt nam </option>
+                <option value="usd" id="u">usd</option>
+            </select></td>
+            <td></td><td style="width: 50px"></td>
+            <td><select name="ba">
+                <option value="vn" id="v">Việt nam </option>
+                <option value="usd" id="u">usd</option>
+
+            </select></td>
+            <td></td><td style="width: 50px"></td>
+            <td><button style="background: blue" id=" name" onclick="convert()"> convert</button></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+            <tr>
+              <td></td>
+                <td>
+                    <span  style="display: none"  id="mess" ><b style="color: blue">Số tiền bạn nhận được là:</b></span>
+            <script>
+                function onfocusName() {
+                    document.getElementById("mess").setAttribute("style", "display:block")
+                }
+            </script>
+                    <script>
+                        let amount,fromcurency,tocurency;
+                        function convert()
+                        {
+                           amount = document.getElementById("txt").value;
+                           fromcurrency=document.getElementById("v").value;
+                           tocurrency=document.getElementById("u").value;
+                           if(fromcurency==fromcurency&&tocurency==tocurency)
+                           {
+                               alert("vui lòng nhập lại:");
+                           }
+                           else if(tocurency=="usd"&&fromcurency=="vn") {
+                               amount/=23000;
+                           }
+                           else {
+                               amount*=23000;
+                           }
+
+
+
+                        }
+
+
+                    </script>
+            </td>
+        </tr>
+
+
+    </table>
+</div>
+</body>
+</html>
