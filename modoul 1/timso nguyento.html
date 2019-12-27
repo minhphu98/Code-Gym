@@ -6,11 +6,11 @@
     <script>
         function snt() {
             var n;
-var nt=true;
+var nt=0;
             n=prompt(n);
             if (n<2)
             {
-nt=falsef;
+nt=1;
             }
             else
             {
@@ -19,11 +19,11 @@ nt=falsef;
                 {
                     if(n%i==0)
                     {
-                      nt=false;
+                      nt=1;
                          break;
                     }
                 }
-                if(nt==true)
+                if(nt==0)
                 {
                     alert("đây là sô nguyên to");
                 }
