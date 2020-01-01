@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bang may tinh</title>
+</head>
+<body>
+<h1> Máy tính</h1><br>
+<br>
+<input type="text" id="mt1">
+<input type="text"  id="mt2"><br><br>
+
+
+<button type="button" style="width: 80px" onclick=" mot() ">(+)</button>
+<button type="button" style="width: 80px" onclick="hai()">(-)</button>
+<button type="button" style="width: 80px" onclick="ba()">(*)</button>
+<button type="button" style="width: 80px" onclick="bon()">(/)</button>
+<p id="hien">kq</p>
+<script>
+
+    function mot() {
+        var a=document.getElementById("mt1").value;
+        var b=document.getElementById("mt2").value;
+        var c = parseInt(a) + parseInt(b);
+        document.getElementById("hien").innerHTML = "Kết quả là:" +c;
+    }
+    function hai() {
+        var a=document.getElementById("mt1").value;
+        var b=document.getElementById("mt2").value;
+        var c = parseInt(a) - parseInt(b);
+        document.getElementById("hien").innerHTML = "Kết quả là:" +c;
+    }
+    function ba() {
+        var a=document.getElementById("mt1").value;
+        var b=document.getElementById("mt2").value;
+        var c = parseInt(a) * parseInt(b);
+        document.getElementById("hien").innerHTML = "Kết quả là:" +c;
+    }
+    function bon() {
+        var a=document.getElementById("mt1").value;
+        var b=document.getElementById("mt2").value;
+        var c = parseInt(a) / parseInt(b);
+        document.getElementById("hien").innerHTML = "Kết quả là:" +c;
+    }
+</script>
+</body>
+</html>
