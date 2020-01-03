@@ -1,28 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-<h1>A Web Page</h1>
-<p id="demo">A Paragraph</p>
-<button type="button" onclick="myFunction()">Try it</button>
-
 <script>
-    function myFunction() {
-        document.getElementById("demo").innerHTML = "Paragraph changed.";
+    var year = parseInt(prompt("nhập năm nhuận:"));
+    var lnn = false;
+    var lnn4 = year % 4 == 0;
+    if (lnn4) {
+        var lnn100 = year % 100 == 0;
+        if (lnn100) {
+            var lnn400 = year % 400 == 0;
+            if (lnn400) {
+                lnn = true;
+            }
+        } else {
+            lnn = true;
+        }
     }
+   if (lnn)
+   {
+       alert(year +"Năm nhuận:");
+   }
+   else {
+       alert(year+"không nhuận:");
+   }
+
 </script>
-<h2>What Can JavaScript Do?</h2>
-<p id="demo">JavaScript can change HTML content.</p>
-<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
-<h2>What Can JavaScript Do?</h2>
-<p>JavaScript can change HTML attributes.</p>
-<p>In this case JavaScript changes the src (source) attribute of an image.</p>
-<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
 </body>
 </body>
 </html>
