@@ -2,43 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Sự kiện bàn phím</title>
 </head>
 <body onload="docReady()">
 <img id="nobita" src="https://media1.picsearch.com/is?tN3yz0QRF6fDQtTfPUGUinHMEZrZPz2iHRw-Wb-G5TM&height=200"
-     style="position:absolute;left:0; top:0;" height="200" width="180"/>
+     style="position:absolute;left:0;top:0;" width="200px" height="180" />
 <script>
     function len() {
         let element = document.getElementById("nobita");
         element.style.top = parseInt(element.style.top) - 5 + 'px';
     }
     function xuong() {
-        var element = document.getElementById("nobita");
+        let element = document.getElementById("nobita");
         element.style.top = parseInt(element.style.top) + 5 + 'px';
     }
-    function trai() {
-        var element = document.getElementById("nobita");
+    function  trai() {
+        let element = document.getElementById("nobita");
         element.style.left = parseInt(element.style.left) - 5 + 'px';
     }
     function phai() {
-        var element = document.getElementById("nobita");
-        element.style.left = parseInt(element.style.left) + 5 + 'px';
-
+        let  element=document.getElementById("nobita");
+        element.style.left=parseInt(element.style.left)+ 5 +'px';
     }
-    function menu(evt) {
+        function menu(evt) {
         switch (evt.keyCode) {
-            case 1:
+            case 49:
                 len();
-                break;
-            case 2:
-                xuong();
-                break;
-            case 3:
-                trai();
-                break;
-            case 4:
-                phai();
-                break;
+                 break;
+                case 38:
+                    xuong();
+                    break;
+                    case 39:
+                        trai();
+                        break;
+                        case 40:
+                            phai();
+                            break;
         }
     }
     function docReady() {
