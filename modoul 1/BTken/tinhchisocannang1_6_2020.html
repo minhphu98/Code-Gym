@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a= parseFloat(prompt("nhập cân nặng:"));
+    var b =parseFloat(prompt("nhap chiều cao (đơn vị m):"));
+   var bmi = a/b;
+    if (bmi < 18)
+        document.write("Loại: Underweight:"+bmi);
+    else if (bmi < 25.0)
+        document.write("Loại:  Normal:"+bmi);
+    else if (bmi < 30.0)
+        document.write("Loại:   Overweight:"+bmi);
+    else
+        document.write("Loại:   Obese:" +bmi);
+</script>
+</body>
+</html>

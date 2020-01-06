@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Máy tính</h1><br>
+<br>
+<input type="text" id="mt1">
+<input type="text"  id="mt2"><br><br>
+
+
+<button type="button" style="width: 80px"  onclick="tinh('+')">(+)</button>
+<button type="button" style="width: 80px" onclick="tinh('-')">(-)</button>
+<button type="button" style="width: 80px" onclick="tinh('*')">(*)</button>
+<button type="button" style="width: 80px" onclick="tinh('/')">(/)</button>
+<p id="hien">kq</p>
+<script>
+    function tinh(pheptinh)
+    {
+      let a,b,result;
+      a= document.getElementById("mt1").value;
+      a=Number.parseFloat(a);
+      b=document.getElementById("mt2").value;
+      b=Number.parseFloat(b);
+      switch (pheptinh) {
+          case "+":
+          result =  a+b ;
+          break;
+          case "-":
+              result =  a-b ;
+              break;
+          case "*":
+              result =  a*b ;
+              break;
+          case "/":
+              result =  a/b ;
+              break;
+
+      }
+        document.getElementById("hien").innerHTML = "Kết quả là:" +result;
+    }
+
+</script>
+</body>
+</html>

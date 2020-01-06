@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var year = parseInt(prompt("nhập năm nhuận:"));
+    var lnn = false;
+    var lnn4 = year % 4 == 0;
+    if (lnn4) {
+        var lnn100 = year % 100 == 0;
+        if (lnn100) {
+            var lnn400 = year % 400 == 0;
+            if (lnn400) {
+                lnn = true;
+            }
+        } else {
+            lnn = true;
+        }
+    }
+   if (lnn)
+   {
+       alert(year +"Năm nhuận:");
+   }
+   else {
+       alert(year+"không nhuận:");
+   }
+
+</script>
+</body>
+</body>
+</html>

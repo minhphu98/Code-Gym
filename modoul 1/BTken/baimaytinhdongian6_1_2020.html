@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <table border="1" style="color: blue" cellpadding="5px" cellspacing="0px">
+        <TR><td colspan="4"><input id="txt" /></td></TR>
+        <tr>
+          <td ><button onclick="Toanhang(1)"><b style="color: blue">1</b></button></td>
+            <td ><button onclick="Toanhang(2)" ><b style="color: blue">2</b></button></td>
+            <td><button onclick="Toanhang(3)"><b style="color: blue">3</b></button></td>
+            <td><button onclick="Toanhang('+')"><b style="color: blue">+</b></button></td>
+        </tr>
+        <tr>
+            <td ><button onclick="Toanhang(4)"><b style="color: blue">4</b></button></td>
+            <td ><button onclick="Toanhang(5)"><b style="color: blue">5</b></button></td>
+            <td><button onclick="Toanhang(6)"><b style="color: blue">6</b></button></td>
+            <td><button onclick="Toanhang('-')"><b style="color: blue">-</b></button></td>
+        </tr>
+        <tr>
+            <td ><button onclick="Toanhang(7)"><b style="color: blue">7</b></button></td>
+            <td ><button onclick="Toanhang(8)"><b style="color: blue">8</b></button></td>
+            <td><button onclick="Toanhang(9)"><b style="color: blue">9</b></button></td>
+            <td><button onclick="Toanhang('*')"><b style="color: blue">*</b></button></td>
+        </tr>
+        <tr>
+            <td ><button id="xoa1" onclick="xoa(c)"><b style="color: blue">C</b></button></td>
+            <td ><button onclick="Toanhang(0)"><b style="color: blue">0</b></button></td>
+            <td><button onclick="Thuchien('=')"><b style="color: blue">=</b></button></td>
+            <td><button onclick="Toanhang('-')"><b style="color: blue">/</b></button></td>
+        </tr>
+    </table>
+<script>
+    let txt =document.getElementById("txt");
+    function Toanhang(value) {
+        txt.value += value ;
+
+    }
+    function Thuchien() {
+        let result =eval(txt.value);
+        txt.value=result;
+
+    }
+    function xoa() {
+let xoa1 = document.getElementById("txt");
+        xoa1.removeChild(xoa1.lastChild);
+        i--;
+
+    }
+
+</script>
+</body>
+</html>
