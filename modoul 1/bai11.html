@@ -9,26 +9,26 @@
 <body>
 <table>
     <tr>
-        <td><b>Amount</b></td>
-        <td width=" 100px"></td>
-        <td><b>From currcenry</b></td>
-        <td width="100px"></td>
-        <td><b>To currcenry</b></td>
-    </tr>
+    <td><b>Amount</b></td>
+    <td width=" 100px"></td>
+    <td><b>From currcenry</b></td>
+    <td width="100px"></td>
+    <td><b>To currcenry</b></td>
+</tr>
     <tr>
         <td ></td>
         <td width="100px"></td>
     </tr>
     <tr><td><input type="text" id="nhap" value=""></td>
         <td></td>
-        <td><select>
-            <option value="VietNam" id="v">Viet Nam</option>
-            <option value="USD" id="u">U S D</option>
+        <td><select id ="v">
+            <option value="VietNam" >Viet Nam</option>
+            <option value="USD" >U S D</option>
         </select></td>
         <td></td>
-        <td><select>
-            <option value="VietNam" id="v">Viet Nam</option>
-            <option value="USD" id="u">U S D</option>
+        <td><select id="u">
+            <option  value="VietNam">Viet Nam</option>
+            <option value="USD" >U S D</option>
         </select></td>
         <td width="100px"> </td>
         <td><button type="button " style="background: #48ff5b" id=" name" onclick="convert()"> convert</button>  </td>
@@ -53,14 +53,24 @@
                 money = amount *  23000;
                 document.getElementById("hien").innerHTML = "Hiện số tiền là:" + money;
             }
-         else if(fromCurrency === 'USD' && toCurrency === 'VietNam') {
+
+            if(fromCurrency === 'USD' && toCurrency === 'VietNam') {
                 money = amount / 23000;
                 document.getElementById("hien").innerHTML = "Hiện số tiền là:" + money;
             }
-         else {
-             alert("nhập lại");
+
+            if
+            (fromCurrency === 'VietNam' && toCurrency === 'VietNam') {
+                money = amount ;
+                document.getElementById("hien").innerHTML = "Hiện số tiền là:" + money;
             }
-return 0;
+            if
+            (fromCurrency === 'USD' && toCurrency === 'USD') {
+                money = amount ;
+                document.getElementById("hien").innerHTML = "Hiện số tiền là:" + money;
+            }
+
+
         }
     </script>
 </table>

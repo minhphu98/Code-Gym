@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SỰ kiện chuột</title>
+</head>
+<body>
+<form>
+    <img id="img" src="https://png.pngtree.com/png-clipart/20190921/original/pngtree-one-blue-white-football-illustration-png-image_4758766.jpg" style="width: 300px">
+    <br><br><b1> quả bóng tròn</b1><br>
+    <br><input type="button" value="button" onclick="buton();"/>
+    <input type="button" value="buton" onclick="button();"/>
+
+</form>
+<script>
+    var myimg = null;
+    myimg = document.getElementById('img');
+    function init() {
+        myimg = document.getElementById('img');
+        myimg.style.position = 'relative';
+        myimg.style.left = '0px';
+
+    }
+    function buton() {
+        myimg.style.left = parseInt(myimg.style.left) + 10 + 'px';
+
+    }
+    function button()
+    {
+        myimg.style.left = parseInt(myimg.style.left) - 10 - 'px';
+    }
+    window.onload = init;
+</script>
+</body>
+</html>

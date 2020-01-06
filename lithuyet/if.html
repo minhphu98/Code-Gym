@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function gpt() {
+            var a,b;
+            a =prompt("nhập a:");
+            a=Number.parseFloat(a);
+
+            b=prompt("nhạp b");
+            b=Number.parseFloat(b);
+            if(a==0)
+                if(b==0)
+                    alert('ptvsn');
+                else
+                    alert('ptvn');
+            else
+                alert('nghiệm x='+ (-b/a));
+        }
+        function docSo(number) {
+            let str = "";
+            switch (number){
+                case 0: str = "Khong";
+                    break;
+                case 1: str = "Mot";
+                    break;
+                case 2: str = "Hai";
+                    break;
+                case 3: str = "Ba";
+                    break;
+                case 4: str = "Bon";
+                    break;
+                case 5: str = "Nam";
+                    break;
+                case 6: str = "Sau";
+                    break;
+                case 7: str = "Bay";
+                    break;
+                case 8: str = "Tam";
+                    break;
+                case 9: str = "Chin";
+                    break;
+                default: str="Khong biet";
+            }
+            return str;
+        }
+
+        function docSo2() {
+            let number;
+            number = prompt("Nhap so:");
+            number = Number.parseInt(number);
+            alert(docSo3(number));
+        }
+        function docSo3(number) {
+            let str = "Khong biet";
+            if(number >= 100 && number < 1000){
+                let hangTram, hangChuc, hangDonVi;
+                hangDonVi = number % 10;
+                hangChuc = (number/10) % 10;
+                hangTram = number/100;
+
+                hangTram = Number.parseInt((hangTram));
+                hangChuc = Number.parseInt((hangChuc));
+
+
+                str = docSo(hangTram) + " tram.";
+                str += docSo(hangChuc) + " chuc.";
+                str += docSo(hangDonVi);
+            }
+           else str = "Khong biet";
+
+            return str;
+        }
+    </script>
+</head>
+<body>
+<button onclick="gpt()">button</button>
+<button onclick="docSo2()">docso</button>
+</body>
+</html>
