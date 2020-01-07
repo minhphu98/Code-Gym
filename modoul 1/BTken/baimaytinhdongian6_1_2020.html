@@ -27,9 +27,9 @@
             <td><button onclick="Toanhang('*')"><b style="color: blue">*</b></button></td>
         </tr>
         <tr>
-            <td ><button id="xoa1" onclick="xoa(c)"><b style="color: blue">C</b></button></td>
+            <td ><button id="xoa1" onclick="xoa()"><b style="color: blue">C</b></button></td>
             <td ><button onclick="Toanhang(0)"><b style="color: blue">0</b></button></td>
-            <td><button onclick="Thuchien('=')"><b style="color: blue">=</b></button></td>
+            <td><button onclick="Thuchien()"><b style="color: blue">=</b></button></td>
             <td><button onclick="Toanhang('-')"><b style="color: blue">/</b></button></td>
         </tr>
     </table>
@@ -45,10 +45,7 @@
 
     }
     function xoa() {
-let xoa1 = document.getElementById("txt");
-        xoa1.removeChild(xoa1.lastChild);
-        i--;
-
+        txt.value="";
     }
 
 </script>

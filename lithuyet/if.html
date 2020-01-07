@@ -48,10 +48,12 @@
         }
 
         function docSo2() {
-            let number;
-            number = prompt("Nhap so:");
-            number = Number.parseInt(number);
-            alert(docSo3(number));
+           do {
+               let number;
+               number = prompt("Nhap so:");
+               number = Number.parseInt(number);
+               alert(docSo3(number));
+           }while (prompt("tiep tuc(C/K")=="C")
         }
         function docSo3(number) {
             let str = "Khong biet";
