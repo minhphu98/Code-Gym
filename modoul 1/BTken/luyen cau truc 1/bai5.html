@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =parseFloat(prompt("nhap điểm kiểm tra "));
+    let b =parseFloat(prompt("nhập điểm giữa kì"));
+    let c= parseFloat(prompt("nhập điểm cuối kì"));
+    let td=(a+b+b+b+c+c+c)/6;
+    if(td>=8 && td<=10)
+    {
+        alert("học sinh giỏi");
+    }
+     if(td>=6.5 && td<8)
+     {
+         alert("hs khá");
+     }
+     if(td>=4.5 && td<6.5)
+     {
+         alert("hs trung bình");
+     }
+     if(td>=0 && td<4.5)
+     {
+         alert("hs yếu");
+
+
+     }
+     if(td>10 || td <0)
+     {
+         alert("nhập sai");
+     }
+
+
+
+</script>
+</body>
+</html>

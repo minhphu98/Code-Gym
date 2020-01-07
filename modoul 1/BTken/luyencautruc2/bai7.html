@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="hien"></p>
+<script>
+    let a=parseFloat(prompt("nhap a"));
+    let b=parseFloat(prompt("nhap b"));
+    let c=parseFloat(prompt("nhap c"));
+    let denta=b*b-4*a*c;
+    let x1=(-b+Math.sqrt(denta)/(2*a));
+    let x2=(-b-Math.sqrt(denta)/(2*a));
+    let x12=-b/2*a;
+    if(a==0)
+    {
+        if(b==0)
+        {
+            if(c==0)
+            {
+                alert("pt vố số nghiệm:");
+
+            }
+            else
+            {
+                alert("pt vô nghiệm");
+            }
+
+
+        }
+        else  if(b==0)
+        {
+            if(c==0)
+            {
+                alert("phương trình vô số nghiệm:");
+            }
+            else
+            {
+                alert("phương trình vô nhiệm"+x12);
+            }
+        }
+        else
+        {
+            document.getElementById("hien").innerHTML=-c/b;
+        }
+    }
+    if(denta>0){
+       alert("phương trình có hai nghiệm x1="+x1+"và x2="+x2);
+    }
+    if(denta==0)
+    {
+
+        alert("phương trình có nghiệm kép"+x12);
+    }
+    if(denta<0)
+    {
+        alert("phương trình vô nghiệm");
+    }
+
+
+</script>
+</body>
+</html>
