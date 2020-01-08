@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function calculator(value) {
+
+            switch (value) {
+                case 1:
+                case 2:
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                case 7:
+                case 8:
+                case 9: let screen = document.getElementById('screen').innerText;
+                    document.getElementById('screen').innerText=screen + value;
+                    break;
+                case 'AC': document.getElementById('screen').innerText="";
+                    break;
+                case 'NEG':
+                    break;
+                case 'PER':
+                    break;
+                case 'DIV':
+                    break;
+                case 'Mul':
+                    break;
+                case 'SUB':
+                    break;
+                case 'PLUS':
+                    break;
+                case 'DOT':
+                    break;
+                case 'EQUAL':
+                    break;
+            }
+
+        }
+    </script>
+</head>
+<body>
+<table border="1">
+    <tr >
+        <td colspan="4">
+            <div id="screen">  <input type="text" align="right">      </div>
+        </td>
+    </tr>
+
+    <tr>
+        <td><button id="btn_ac" onclick="calculator(AC)">AC</button></td>
+        <td><button id="btn_neg" onclick="calculator(NEG)">+/-</button></td>
+        <td><button id="btn_per" onclick="calculator(PER)">%</button></td>
+        <td><button id="btn_div" onclick="calculator(DIV)">/</button></td>
+    </tr>
+
+    <tr>
+        <td><button id="btn_7" onclick="calculator(7)">7</button></td>
+        <td><button id="btn_8" onclick="calculator(8)">8</button></td>
+        <td><button id="btn_9" onclick="calculator(9)">9</button></td>
+        <td><button id="btn_mul" onclick="calculator(MUL)">x</button></td>
+    </tr>
+
+    <tr>
+        <td><button id="btn_4" onclick="calculator(4)">4</button></td>
+        <td><button id="btn_5" onclick="calculator(5)">5</button></td>
+        <td><button id="btn_6" onclick="calculator(6)">6</button></td>
+        <td><button id="btn_sub" onclick="calculator(SUB)">-</button></td>
+    </tr>
+
+    <tr>
+        <td><button id="btn_1" onclick="calculator(1)">1</button></td>
+        <td><button id="btn_2" onclick="calculator(2)">2</button></td>
+        <td><button id="btn_3" onclick="calculator(3)">3</button></td>
+        <td><button id="btn_plus" onclick="calculator(PLUS)">+</button></td>
+    </tr>
+
+    <tr>
+        <td colspan="2"><button id="btn_0" onclick="calculator(0)">0</button></td>
+        <td><button id="btn_com" onclick="calculator(DOT)">.</button></td>
+        <td><button id="btn_equal" onclick="calculator(EQUAL)">=</button></td>
+    </tr>
+</table>
+</body>
+</html>

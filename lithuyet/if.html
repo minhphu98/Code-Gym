@@ -59,12 +59,14 @@
             let str = "Khong biet";
             if(number >= 100 && number < 1000){
                 let hangTram, hangChuc, hangDonVi;
+
                 hangDonVi = number % 10;
                 hangChuc = (number/10) % 10;
                 hangTram = number/100;
 
                 hangTram = Number.parseInt((hangTram));
                 hangChuc = Number.parseInt((hangChuc));
+
 
 
                 str = docSo(hangTram) + " tram.";

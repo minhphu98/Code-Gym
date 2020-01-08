@@ -9,7 +9,7 @@
 <input type="text" id="nhap" value="">
 <button type="button" onclick="hien()">Tìm kiếm</button>
 <br><br>
-<b id="on">kết quả:</b>
+<b id="on"></b>
 <script>
     var month;
 function hien()
@@ -19,14 +19,14 @@ function hien()
 
 
         case "2":
-            document.getElementById("on").innerHTML = "tháng 2 có 28 hoặc 29 ngày";
+            document.getElementById("on").innerHTML = "Tháng 2 có 28 hoặc 29 ngày";
             break;
         case "1":
         case "3":
         case "5":
        case "7":
         case "9":
-            document.getElementById("on").innerHTML = "tháng này có 31 ngày";
+            document.getElementById("on").innerHTML = "Tháng này có 31 ngày";
             break;
         case "4":
         case "6":
@@ -34,7 +34,7 @@ function hien()
         case "10":
         case "11":
         case "12":
-            document.getElementById("on").innerHTML = "tháng này có 31 ngày";
+            document.getElementById("on").innerHTML = "Tháng này có 30 ngày";
             break;
            default:
                alert("vui lòng nhập lại");

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="hien"></p>
+<script>
+    let luong=parseFloat(prompt("nhập số lương "));
+    let bhxh=parseFloat(prompt("nhạp số tiên hiêm xã hpooji"));
+    let giamTru=bhxh+360000;
+    let chiuThue =luong*0.1-giamTru;
+    let chiuthue2=luong*0.2-giamTru;
+    if(luong>40000000)
+    {
+        document.getElementById("hien").innerHTML="("+chiuThue+")";
+    }
+    if(luong>80000000)
+    {
+        document.getElementById("hien").innerHTML="thue loại 2:"+chiuthue2;
+    }
+    if(lương>200000000)
+    {
+        document.getElementById("hien").innerHTML="thue laoji 3:"+luong*0.3-giamTru+"";
+    }
+
+</script>
+
+
+
+</body>
+</html>

@@ -9,8 +9,8 @@
     <img id="img" src="https://png.pngtree.com/png-clipart/20190921/original/pngtree-one-blue-white-football-illustration-png-image_4758766.jpg" style="width: 300px">
     <br><br><b1> quả bóng tròn</b1><br>
     <br><input type="button" value="button" onclick="buton();"/>
-    <input type="button" value="buton" onclick="button();"/>
-
+    <input type="button" value="buton1" onclick="buton1();"/>
+    <input type="button" value="buton2" onclick="buton2();"/>
 </form>
 <script>
     var myimg = null;
@@ -19,15 +19,20 @@
         myimg = document.getElementById('img');
         myimg.style.position = 'relative';
         myimg.style.left = '0px';
+        myimg.style.top= '0px';
 
     }
     function buton() {
         myimg.style.left = parseInt(myimg.style.left) + 10 + 'px';
 
     }
-    function button()
+    function buton1()
     {
-        myimg.style.left = parseInt(myimg.style.left) - 10 - 'px';
+        myimg.style.left = parseInt(myimg.style.left) + -10 + 'px';
+    }
+    function buton2()
+    {
+        myimg.style.top = parseInt(myimg.style.top) + 10 + 'px';
     }
     window.onload = init;
 </script>
