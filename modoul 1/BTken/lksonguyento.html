@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="hien"></p>
+<script>
+    let number=prompt("nhập số giá trị đầu cần hiện của số nt");
+    let cout=0;
+    let n=2;
+    while (cout<n)
+    {
+        let d=1;
+        for (i=2;i<=Math.sqrt(n);i++)
+            if(n%i==0)
+            {
+                d=0;
+                break;
+            }
+        if(d==1)
+        {
+            document.getElementById("hien").innerHTML=+n;
+            cout++;
+        }
+        n++;
+    }
+
+</script>
+
+</body>
+</html>
