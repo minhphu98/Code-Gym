@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let studentOfClass=new Array();
+    function  input() {
+        let name;
+        do{
+             name =prompt("nhập tên .(nhâp 'q' để kết thúc)");
+                if(name!='q')
+                    studentOfClass.push(name);
+        }while (name!="q");
+    }
+    function show()
+    {
+        document.write("Số sinh viên:"+studentOfClass.length+"<br>");
+        for(let name in studentOfClass){
+            document.write(studentOfClass[name]+"<br>");
+        }
+    }
+
+    document.write("<br>Tr:<br>");
+    show();
+    document.write("<br> sau khi dao nguoc:<br>");
+    studentOfClass=studentOfClass.reverse();
+    show();
+    document.write("<br>đảo ngược giá trị:<br>");
+    let tmp =studentOfClass[0];
+    studentOfClass[0]=studentOfClass[1];
+    studentOfClass[1]=tmp;
+    show();
+    document.write("<br> nối các phân tử");
+    document.write(studentOfClass.join("<br>"));
+    input();
+</script>
+</body>
+</html>

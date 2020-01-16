@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x, i, gt=1;
+    x = parseFloat(prompt(" nhập số nguyên duong "));
+    while (sont()) {
+        if (sont())
+            alert("Không là số nguyên dương");
+    }
+    for ( i = 1; i <= x; i++) {
+        gt *= i;
+    }
+    function sont() {
+        if ( isNaN(x))
+            return true;
+        else if ( x !== parseInt(x))
+            return true;
+        else if ( x < 0)
+            return true;
+        else return false;
+    }
+    document.write(" Giai thừa của "+" " + x + " là "+"=" +" " + gt);
+</script>
+</body>
+</html>

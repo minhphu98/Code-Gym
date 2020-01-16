@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let i,gt=1,x;
+    x=parseFloat(prompt("nhấp sn:"));
+    while (snt()){
+        if (snt()) {
+            alert("không phải số nguyen dương");
+        }
+
+    }
+   for (i=1;i<=x;i++)
+   {
+       gt*=i;
+   }
+
+    function snt() {
+        if(isNaN(x))
+        {
+            return true;
+        }
+        else if(x!==parseInt(x))
+        {
+            return true;
+        }
+        else if(x<0)
+        {
+            return true;
+        }
+        else return false;
+
+    }
+    document.write("hiên gt:"+gt);
+</script>
+</body>
+</html>

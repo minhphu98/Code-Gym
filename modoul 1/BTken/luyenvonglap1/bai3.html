@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Fibo1, Fibo2, Fibo3, i, fibo20;
+    Fibo1 =0; Fibo2 = 1;
+    fibo20 = "0 , 1, ";
+    i=2;
+    do {
+        Fibo3 = Fibo1 + Fibo2;
+        Fibo1 = Fibo2;
+        Fibo2 = Fibo3;
+        fibo20 = fibo20 + Fibo3 + ", ";
+        i++;
+    }
+    while (i<20)
+
+    document.write(" This is first 20 Fibonacci: "+ fibo20);
+
+</script>
+</body>
+</html>

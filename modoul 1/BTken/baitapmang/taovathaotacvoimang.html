@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="txt" >
+<button id="add" onclick="taoMoi()">ADD</button>
+<button idd="hien" onclick="hienThi()">Display</button>
+<p id="result"></p>
+<script>
+ let x=0;
+ let array=Array();
+ function taoMoi() {
+     array[x] = document.getElementById("txt").value;
+     x++;
+     document.getElementById("txt").value = "";
+ }
+ function hienThi() {
+     let e="";
+     for(let i=0;i<array.length;i++)
+     {
+         e+="so tt "+i+" chuoi "+ " "+array[i]+"<br>";
+
+     }
+     document.getElementById("result").innerHTML=e;
+
+ }
+</script>
+</body>
+</html>

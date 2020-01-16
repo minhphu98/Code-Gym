@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let khoiTao = () => {
+        soDong = parseInt(prompt("Nhap so dong: "));
+        soCot = parseInt(prompt("Nhap so cot: "));
+        array = new Array(soDong);
+        for (let i=0;i<soDong;i++){
+            array[i] = new Array(soCot);
+            for (let j=0;j<soCot;j++){
+                array[i][j] = Math.random()*100;
+            }
+        }
+    }
+
+    let hienMang = (a) => {
+        document.writeln("<table border='1'>");
+        for (let i=0;i<soDong;i++){
+            document.writeln("<tr>");
+            for (let j=0;j<soCot;j++){
+                document.write("<td>" + parseInt(a[i][j]) + "</td>");
+            }
+            document.writeln("</tr>");
+        }
+        document.writeln("</table>");
+    }
+    khoiTao();
+    hienMang();
+</script>
+</body>
+</html>
